@@ -9,7 +9,6 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-import java.util.List;
 
 @Entity
 @AllArgsConstructor
@@ -23,6 +22,5 @@ public class ClientDetails {
     private String name;
     private String cantactNum;
     private String email;
-    private List<Workers> assigned_workers;
 
 }
