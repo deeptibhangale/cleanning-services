@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
-
 @RestController
+@CrossOrigin(origins = "http://localhost:5173/")
 public class CleaningController {
-   @Autowired
-   private WorkerServices workerServices;
+    @Autowired
+    private WorkerServices workerServices;
     @GetMapping("/workers")
     public List<Workers> getAllWorkers(){
 
